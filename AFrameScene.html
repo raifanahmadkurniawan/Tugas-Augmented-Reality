@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Objek 3D dengan Kontrol Gulir</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <!-- Tabung -->
+    <a-cylinder position="-5 1 -8" height="2" radius="1" color="red" rotation="0 45 0"></a-cylinder>
+    
+    <!-- Kotak -->
+    <a-box position="-2 1 -8" width="2" height="2" depth="2" color="green" rotation="0 30 0"></a-box>
+    
+    <!-- Segitiga -->
+    <a-triangle position="1 1 -8" vertex-a="-1 0 0" vertex-b="1 0 0" vertex-c="0 2 0" color="blue" rotation="0 60 0"></a-triangle>
+    
+    <!-- Bola -->
+    <a-sphere position="4 1 -8" radius="1" color="yellow" rotation="0 90 0"></a-sphere>
+    
+    <!-- Segilima -->
+    <a-icosahedron position="7 1 -8" radius="1" color="orange" rotation="0 120 0"></a-icosahedron>
+
+    <!-- Penempatan kamera dengan kontrol gulir -->
+    <a-entity camera look-controls controls-wasd position="0 1.6 0"></a-entity>
+</a-scene>
+</body>
+</html>
